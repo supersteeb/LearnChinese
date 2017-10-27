@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Character:</strong>
+  <%= @word.character %>
+</p>
+
+<p>
+  <strong>Meaning:</strong>
+  <%= @word.meaning %>
+</p>
+
+<p>
+  <strong>Pinyin:</strong>
+  <%= @word.pinyin %>
+</p>
+
+<p>
+  <strong>Part of speech:</strong>
+  <%= @word.part_of_speech %>
+</p>
+
+<p>
+  <strong>Mnemonic Device:</strong>
+  <%= @word.mnemonic %>
+</p>
+
+<p>
+	<strong>Date Added:</strong>
+	<%= @word.created_at %>
+</p>	
+
+<%= link_to 'Edit', edit_word_path(@word) %> |
+<%= link_to 'Back', words_path %>

@@ -1,0 +1,17 @@
+<h1>English</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th align="left"><%= sortable "meaning", "English" %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td><%= link_to word.meaning, word %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

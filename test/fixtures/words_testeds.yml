@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tests: one
+  words: one
+  score: 1
+
+two:
+  tests: two
+  words: two
+  score: 1

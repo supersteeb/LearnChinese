@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Words</h1>
+<h3>Total: <%= @words.count %></h3>
+
+<h4><%= link_to 'New Word', new_word_path %></h4>
+<h4><%= link_to 'Tests', test_index_path %></h4>
+<h4><%= link_to 'Take New Test', new_test_path %></h4>
+
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">汉字    </th>
+      <th align="left"><%= sortable "meaning" %></th>
+      <th align="left"><%= sortable "pinyin" %></th>
+      <th align="left"><%= sortable "part_of_speech" %></th>
+      <th align="left"><%= sortable "created_at", "Date Added" %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td><%= link_to word.character, word %></td>
+        <td><%= word.meaning %></td>
+        <td><%= word.pinyin %></td>
+        <td><%= word.part_of_speech %></td>
+        <td><%= word.created_at %></td>
+        <td><%= link_to 'Edit', edit_word_path(word) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+
+<%= link_to 'Characters', characters_words_path %> |
+<%= link_to 'English', english_words_path %> |
+<%= link_to 'Pinyin', pinyin_words_path %>
+
+

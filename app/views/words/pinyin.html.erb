@@ -1,0 +1,17 @@
+<h1>Pinyin</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pinyin</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td><%= link_to word.pinyin, word %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

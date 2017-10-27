@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+What it currently has: 
+- scaffold of inputting words used, etc. 
 
-Things you may want to cover:
+Things this needs to do:
 
-* Ruby version
+* Give a test on (user selects #) 10-15 words user learned. randomly pulls from other definitions. 
 
-* System dependencies
+* If doing flash cards, a way to gauge time?
 
-* Configuration
 
-* Database creation
+*once deployed, export my current database with my progress/everything
 
-* Database initialization
 
-* How to run the test suite
+Current problem: 
+* Trying to figure out models (also, if I want to learn other languages). For languages, then test have many words, or what. 
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

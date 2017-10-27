@@ -1,0 +1,17 @@
+<h1>Chinese Characters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Characters</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @words.each do |word| %>
+      <tr>
+        <td align="center"><%= link_to word.character, word %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
